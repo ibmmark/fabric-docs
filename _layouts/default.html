@@ -9,11 +9,25 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Information</button>
+      <div id="Information" class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+     </div>
     <section class="xpage-header">
       <div align="right" margin-top: 0px;> 
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
+        <select>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
         <a href="http://hyperledger-fabric.readthedocs.io/en/latest/" class="btn">Documentation</a>
         <a href="https://www.hyperledger.org/community" class="btn">Community</a>
       </div>
