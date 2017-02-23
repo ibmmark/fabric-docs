@@ -3,7 +3,7 @@
   <head>
     <style>
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #0000ffff;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -62,21 +62,14 @@
           <button class="dropbtn">Start here</button>
           <div class="dropdown-content">
             <a href="{{ site.github.repository_url }}">Github</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="http://hyperledger-fabric.readthedocs.io/en/latest/">Documentation</a>
+            <a href="https://chat.hyperledger.org/">Group chats</a>
           </div>
         </div>
         
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
-
-        <select>
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
-        </select>
         <a href="http://hyperledger-fabric.readthedocs.io/en/latest/" class="btn">Documentation</a>
         <a href="https://www.hyperledger.org/community" class="btn">Community</a>
       </div>
